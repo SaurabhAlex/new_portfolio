@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/new_portfolio">
         <div className="min-h-screen bg-background text-foreground">
           <Navbar theme={theme} toggleTheme={toggleTheme} />
           <main className="container mx-auto px-4 py-8">
@@ -35,6 +35,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
           <Footer />

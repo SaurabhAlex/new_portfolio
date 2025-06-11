@@ -9,7 +9,7 @@ const Projects = () => {
     {
       "title": "Tech Junction - E-commerce App",
       "description": "Tech Junction is an e-commerce application designed to provide a seamless shopping experience for cutting-edge electronics. It offers an extensive selection of mobiles, laptops, and accessories, prioritizing user comfort, satisfaction, and secure transactions.",
-      "image": "/projects/techjunction_new.png",
+      "image": "./projects/techjunction_new.png",
       "technologies": [
         "Flutter",
         "Firebase",
@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: 'EduVizz - An Education App',
       description: 'A comprehensive school management platform that streamlines communication between directors, teachers, and students. Features include attendance tracking, assignment management, library resources, event galleries, and circular notices.',
-      image: '/projects/eduvizz.png',
+      image: './projects/eduvizz_new.png',
       technologies: ['Flutter', 'Firebase', 'REST APIs', 'GetX'],
       category: 'mobile',
       links: {
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       "title": "Empower Edu - Study Abroad App",
       "description": "Empower Edu is a user-centric mobile application built to simplify the study abroad journey for students, institutions, and consultants. It offers personalized course recommendations, application tracking, document management, and expert guidance — all in one platform.",
-      "image": "/projects/empower_edu.png",
+      "image": "./projects/empower_edu_new.png",
       "technologies": [
         "Flutter",
         "Firebase",
