@@ -59,7 +59,7 @@ const Home = () => {
               View Projects
             </Link>
             <a
-              href="https://docs.google.com/document/d/1GjEqK7IB9PNrXxzt2NvQz7wBsAbIGuqH6WBtD8FmTTQ/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1d1cv3GEhnlcl5HxXkUdSW0jydiJ8P5fHZPUGbw6T8Q0/edit?tab=t.0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
