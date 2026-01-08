@@ -51,7 +51,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               )}
             </button>
             <motion.a
-              href="https://docs.google.com/document/d/1GjEqK7IB9PNrXxzt2NvQz7wBsAbIGuqH6WBtD8FmTTQ/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1d1cv3GEhnlcl5HxXkUdSW0jydiJ8P5fHZPUGbw6T8Q0/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
