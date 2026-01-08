@@ -2,26 +2,29 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 
 const About = () => {
-  const experience = [
-    {
-      company: 'Infinite Group',
-      role: 'Flutter Developer',
-      period: 'Jun 2024 – Present',
-      description: 'Leading Flutter app development with GetX state management, implementing complex animations and REST API integrations.',
-    },
-    {
-      company: 'DSD Systems Pvt. Ltd',
-      role: 'Flutter Developer',
-      period: 'Oct 2023 – May 2024',
-      description: 'Developed and maintained Flutter applications with Firebase integration, FCM notifications, and UI optimizations.',
-    },
-    {
-      company: 'Digicoders Technologies',
-      role: 'Flutter Developer',
-      period: 'Feb 2023 – Sep 2023',
-      description: 'Built e-commerce features using Flutter, implemented Firebase Authentication, and local storage with SQLite.',
-    },
-  ];
+ const experience = [
+  {
+    company: 'Infinite Group',
+    role: 'Flutter Developer',
+    period: 'Jun 2024 – Present',
+    description:
+      'Leading end-to-end Flutter app development with Bloc-based state management, building scalable architectures, integrating REST APIs, and implementing complex UI animations. Actively involved in performance optimization, code refactoring, and delivering production-ready features for both Android and iOS platforms.',
+  },
+  {
+    company: 'DSD Systems Pvt. Ltd',
+    role: 'Flutter Developer',
+    period: 'Oct 2023 – May 2024',
+    description:
+      'Developed and maintained multiple Flutter applications with Firebase services including Authentication, Firestore, and FCM push notifications. Focused on UI/UX improvements, API integration, bug fixing, and performance enhancements while ensuring smooth releases on Play Store and App Store.',
+  },
+  {
+    company: 'Digicoders Technologies',
+    role: 'Flutter Developer',
+    period: 'Feb 2023 – Sep 2023',
+    description:
+      'Worked on Flutter-based e-commerce applications, implementing core features such as product listings, cart flows, and checkout logic. Integrated Firebase Authentication, managed local data using SQLite, and collaborated with designers and backend teams to deliver stable and responsive mobile experiences.',
+  },
+];
 
   const education = [
     {
@@ -60,9 +63,12 @@ const About = () => {
         >
           <h1 className="text-4xl font-bold">About Me</h1>
           <p className="max-w-[85ch] text-lg text-muted-foreground">
-            With over 2 years of experience in Flutter development, I specialize in building
-            scalable and performant cross-platform applications. My expertise includes
-            working with Firebase, REST APIs, and various state management solutions.
+           Flutter developer with 2+ years of hands-on experience building and scaling
+  production-ready Android and iOS applications. I focus on clean architecture,
+  efficient state management (Bloc, GetX), and performance optimization while
+  delivering polished UI/UX with smooth animations. Experienced in integrating
+  REST APIs, Firebase services, and shipping apps end-to-end from development
+  to Play Store and App Store release.
           </p>
         </motion.div>
 
@@ -118,10 +124,10 @@ const About = () => {
           <div className="mt-8 space-y-4">
             <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
               <ul className="list-inside list-disc space-y-2 text-muted-foreground">
-                <li>Published multiple successful apps on Google Play Store and App Store</li>
-                <li>Active contributor on LeetCode: <a href="https://leetcode.com/u/saurabhgupta_/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">@saurabhgupta_</a></li>
-                <li>Developed and maintained apps with 10,000+ active users</li>
-                <li>Implemented complex animations and UI interactions in Flutter</li>
+                <li>Published and maintained multiple production-grade applications on Google Play Store and App Store</li>
+                <li>Built and scaled Flutter apps with 10,000+ active users, focusing on performance, stability, and user experience</li>
+                <li>Implemented advanced animations and complex UI interactions to deliver smooth, engaging mobile experiences</li>
+                <li>Actively solve data structures and algorithms problems on LeetCod: <a href="https://leetcode.com/u/saurabhgupta_/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">@saurabhgupta_</a></li>
               </ul>
             </div>
           </div>
