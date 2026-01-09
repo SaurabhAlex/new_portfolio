@@ -4,21 +4,23 @@ import { useState } from 'react';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
+  const baseUrl = import.meta.env.BASE_URL;
 
   const projects = [
   {
     title: "I Unite - Abroad Study B2B CRM App",
     description: "A role-based CRM mobile application built for study-abroad consultants and counselors to manage leads, track students, and handle real-time communication efficiently.",
-    image: "./projects/iunite_new.png",
+    image: `${baseUrl}projects/iunite_banner.jpg`,
     technologies: [
       "Flutter",
       "Firebase",
-      "REST APIs"
+      "REST APIs",
+      "Web-socket"
     ],
     category: "mobile",
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.infinitegroup.iunite",
-      github: "https://github.com/saurabhgupta/iunite-app"
+      // github: "https://github.com/Infinite-Group/I-Unite-Mobile-App"
     },
     company: "Infinite Group",
     features: [
@@ -34,15 +36,16 @@ const Projects = () => {
   {
     title: "EduVizz - School Management App",
     description: "A school management and communication platform providing real-time academic updates with role-based access for teachers, students, and administrators.",
-    image: "./projects/eduvizz_new.png",
+    image: `${baseUrl}projects/eduvizz_new.png`,
     technologies: [
       "Flutter",
-      "Firebase"
+      "Firebase",
+      "REST APIs"
     ],
     category: "mobile",
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.dsdsystems.eduvizz1",
-      github: "https://github.com/saurabhgupta/eduvizz-app"
+      // github: "https://github.com/saurabhgupta/eduvizz-app"
     },
     company: "DSD Systems Pvt. Ltd",
     features: [
@@ -57,18 +60,17 @@ const Projects = () => {
   {
     title: "Tech Junction - E-commerce App",
     description: "An e-commerce mobile application for purchasing mobiles, laptops, and accessories with smooth cart and order flow functionality.",
-    image: "./projects/techjunction_new.png",
+    image: `${baseUrl}projects/techjunction_new.png`,
     technologies: [
       "Flutter",
-      "Firebase",
-      "REST APIs"
+      "Firebase"
     ],
     category: "mobile",
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.tech_junction",
       github: "https://github.com/saurabhgupta/techjunction-app"
     },
-    company: "DSD Systems Pvt. Ltd",
+    company: "Digicoders Technologies",
     features: [
       "Product listing and categorization",
       "Cart and order management",
@@ -81,15 +83,15 @@ const Projects = () => {
   {
     title: "Infinite Group - Company Website",
     description: "Official company website maintenance and legal content management system developed using React.js and Firebase hosting.",
-    image: "./projects/infinitegroup_web.png",
+    image: `${baseUrl}projects/iunite_banner.jpg`,
     technologies: [
       "React.js",
       "Firebase"
     ],
     category: "web",
     links: {
-      playStore: "",
-      github: "https://github.com/saurabhgupta/infinitegroup-website"
+      website: "https://infinitegroup.global/",
+      // github: "https://github.com/saurabhgupta/infinitegroup-website"
     },
     company: "Infinite Group",
     features: [
@@ -167,11 +169,11 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: 0.1 * index }}
               className="group relative overflow-hidden rounded-lg border bg-card text-card-foreground"
             >
-              <div className="aspect-video overflow-hidden">
+              <div className="flex aspect-video items-center justify-center overflow-hidden bg-muted">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-contain object-center p-4"
                 />
               </div>
               <div className="p-6">
@@ -212,14 +214,14 @@ const Projects = () => {
                       GitHub
                     </a>
                   )}
-                  {project.links.demo && (
+                  {project.links.website && (
                     <a
-                      href={project.links.demo}
+                      href={project.links.website}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline"
                     >
-                      Live Demo
+                      Website
                     </a>
                   )}
                   {project.links.playStore && (
