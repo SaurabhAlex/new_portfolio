@@ -83,7 +83,7 @@ const Projects = () => {
   {
     title: "Infinite Group - Company Website",
     description: "Official company website maintenance and legal content management system developed using React.js and Firebase hosting.",
-    image: `${baseUrl}projects/iunite_banner.jpg`,
+    image: `${baseUrl}projects/infinite_group_web.png`,
     technologies: [
       "React.js",
       "Firebase"
@@ -91,7 +91,6 @@ const Projects = () => {
     category: "web",
     links: {
       website: "https://infinitegroup.global/",
-      // github: "https://github.com/saurabhgupta/infinitegroup-website"
     },
     company: "Infinite Group",
     features: [
