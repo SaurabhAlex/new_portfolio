@@ -9,7 +9,6 @@ A modern, responsive portfolio website built with React.js and Tailwind CSS.
 - 🌓 Light/Dark mode
 - ⚡️ Fast performance
 - 🔍 SEO optimized
-- ♿️ Accessible
 - 🚀 Smooth animations
 
 ## Tech Stack
