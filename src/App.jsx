@@ -8,41 +8,65 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
+// function App() {
+//   const [theme, setTheme] = useState('dark');
+
+//   useEffect(() => {
+//     const savedTheme = localStorage.getItem('theme') || 'dark';
+//     setTheme(savedTheme);
+//     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+//   }, []);
+
+//   const toggleTheme = () => {
+//     const newTheme = theme === 'light' ? 'dark' : 'light';
+//     setTheme(newTheme);
+//     localStorage.setItem('theme', newTheme);
+//     document.documentElement.classList.toggle('dark', newTheme === 'dark');
+//   };
+
+//   return (
+//     <HelmetProvider>
+//       <Router basename="/new_portfolio">
+//         <div className="min-h-screen bg-background text-foreground">
+//           <Navbar theme={theme} toggleTheme={toggleTheme} />
+//           <main className="container mx-auto px-4 py-8">
+//             <Routes>
+//               <Route path="/" element={<Home />} />
+//               <Route path="/about" element={<About />} />
+//               <Route path="/projects" element={<Projects />} />
+//               <Route path="/contact" element={<Contact />} />
+//               <Route path="*" element={<Navigate to="/" replace />} />
+//             </Routes>
+//           </main>
+//           <Footer />
+//         </div>
+//       </Router>
+//     </HelmetProvider>
+//   );
+// }
+
 function App() {
   const [theme, setTheme] = useState('dark');
+
+  const debug = "Reviewdog"; // unused variable
+
+  const printHello = () => {
+    console.log("Hello"); // unused function
+  };
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+
+    console.log(theme); // missing dependency
   }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
+  if (theme == 'dark') {
+    console.log("Dark Mode");
+  }
 
-  return (
-    <HelmetProvider>
-      <Router basename="/new_portfolio">
-        <div className="min-h-screen bg-background text-foreground">
-          <Navbar theme={theme} toggleTheme={toggleTheme} />
-          <main className="container mx-auto px-4 py-8">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    </HelmetProvider>
-  );
+  ...
 }
 
 export default App; 
